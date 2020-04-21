@@ -84,15 +84,6 @@ const createStudentComponent = (name, subject, info) => {
 };
 const studentContainer = document.querySelector("#container");
 
-// for (let i = 0; i < students.length; i++) {
-//     const student = students[i]
-//     studentContainer.innerHTML += createStudentComponent(
-//         student.name,
-//         student.subject,
-//         student.info
-//     )
-// }
-
 for (const student of students) {
   let studentComponent = "";
   if (student.score >= 60) {
@@ -111,10 +102,4 @@ for (const student of students) {
   studentContainer.innerHTML += studentComponent;
 }
 
-{
-  /* <div class="student">
-    <h1 class="xx-large passing">Student Name</h1>
-    <section class="bordered dashed section--padded">Subject</section>
-    <aside class="pushRight">Additional information</aside>
-</div> */
-}
+
